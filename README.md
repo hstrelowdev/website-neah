@@ -31,3 +31,21 @@ src/
 https://stitch.google.com/projects/14164242377883386247
 
 Para cambiar textos, métricas o listas, editar `src/data/site.ts`; los componentes solo consumen props.
+
+## websiteV2 — Nexora Labs
+
+App independiente en `websiteV2/` con React + Vite + TypeScript + Tailwind CSS v4, basada en `websiteV2/DESIGN.md` (*Modern Technical Studio*). Mantiene la visual técnica del mockup pero con funcionalidad real.
+
+```bash
+cd websiteV2
+npm install
+npm run dev
+npm run build
+npm test
+```
+
+- 5 secciones en español: Hero, Servicios, Telemetría, Proceso y CTA final, más header y footer.
+- Todos los CTAs de contacto dicen **“Enviar mensaje”** y abren el mismo diálogo accesible.
+- El formulario envía por `fetch` a Formspree: `https://formspree.io/f/mgakydlg`. Se puede sobrescribir con `VITE_FORMSPREE_ENDPOINT`. El éxito solo se muestra si la respuesta es correcta.
+- No se incluyen estadísticas ni garantías no verificables; la consola del hero y el tablero CI/CD están marcados como demo/simulación.
+- Ver `websiteV2/README.md` para detalles de estructura y contenido simulado.

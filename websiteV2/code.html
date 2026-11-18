@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Nexora Labs</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ffb4ab", "on-tertiary-fixed": "#002113", "on-secondary-fixed": "#00201f", "inverse-on-surface": "#1e3051", "tertiary-fixed": "#6bfcbd", "secondary-fixed": "#72f7f1", "on-surface-variant": "#c3c5d8", "secondary-container": "#00b0ab", "on-primary-fixed-variant": "#003cac", "on-primary-fixed": "#00174d", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#51dad4", "on-background": "#d7e2ff", "background": "#001231", "surface-dim": "#001231", "on-primary-container": "#000318", "on-tertiary-container": "#000703", "surface-container-low": "#061b3b", "surface-container-highest": "#233455", "tertiary": "#49dfa2", "on-primary": "#00297a", "error-container": "#93000a", "on-secondary": "#003735", "surface": "#001231", "on-secondary-fixed-variant": "#00504d", "secondary": "#51dad4", "on-secondary-container": "#003c3a", "primary": "#b5c4ff", "primary-fixed-dim": "#b5c4ff", "primary-fixed": "#dbe1ff", "on-error": "#690005", "tertiary-container": "#00885d", "surface-container-lowest": "#000d27", "primary-container": "#2f6bff", "surface-tint": "#b5c4ff", "surface-bright": "#27395a", "on-surface": "#d7e2ff", "outline-variant": "#434655", "inverse-primary": "#0051e0", "surface-container": "#0b1f3f", "on-tertiary": "#003824", "tertiary-fixed-dim": "#49dfa2", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#233455", "surface-container-high": "#172a4a", "inverse-surface": "#d7e2ff", "outline": "8d90a1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "margin": "1.25rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-desktop": "4rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Inter"], "display-hero-mobile": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "body-sm": ["Inter"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "code-snippet": ["JetBrains Mono"], "label-mono-sm": ["JetBrains Mono"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "code-snippet": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-mono-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-container via-secondary-container to-tertiary flex items-center justify-center shadow-[0_0_16px_rgba(47,107,255,0.35)]"><span class="material-symbols-outlined text-on-primary-container font-bold text-[22px]">terminal</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">Nexora<span class="text-primary">Labs</span></span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-surface-container-high text-on-surface font-medium rounded-lg"><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="servicios" href="#">Servicios</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="proceso" href="#">Proceso</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="nosotros" href="#">Nosotros</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-lg py-space-sm rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-tertiary text-on-primary-container font-headline-sm text-body-sm font-semibold tracking-wide hover:brightness-110 transition-all shadow-[0_4px_20px_rgba(18,181,176,0.3)]" data-path="reservar-consulta" href="#">Reservar consulta gratuita</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full relative overflow-hidden">
+<!-- Git Branch Decorative Trace Line (Global Vertical Spine) -->
+<div class="hidden xl:block absolute left-1/2 top-16 bottom-24 w-px pointer-events-none -translate-x-1/2 z-0 opacity-20 bg-gradient-to-b from-primary via-secondary to-tertiary">
+<div class="sticky top-40 w-2.5 h-2.5 rounded-full bg-secondary -left-[4px] relative shadow-[0_0_12px_#51dad4] animate-ping"></div>
+</div>
+<!-- SECTION 1: HERO -->
+<section class="relative w-full bg-surface-dim pt-12 pb-24 px-margin md:px-margin-desktop overflow-hidden">
+<!-- Dotted Grid Canvas Background -->
+<div class="absolute inset-0 opacity-[0.14] pointer-events-none bg-[radial-gradient(#b5c4ff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<!-- Ambient Atmospheric Glows -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 rounded-full bg-primary-container/20 blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/2 right-10 w-[500px] h-[500px] rounded-full bg-secondary-container/15 blur-[140px] pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Column: Value Proposition -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Trust Badge -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container/80 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#49dfa2] animate-pulse"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface uppercase tracking-wider">
+              ★ 5.0 en Google · +40 productos lanzados
+            </span>
+</div>
+<!-- Hero Headline -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight font-bold">
+            Ingeniería de software que <span class="bg-gradient-to-r from-[#2F6BFF] to-[#22C58B] bg-clip-text text-transparent">escala</span> sin límites.
+          </h1>
+<!-- 2-Line Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl line-clamp-2">
+            Diseñamos y entregamos productos digitales de alto rendimiento, sistemas de IA y software en la nube para equipos ambiciosos.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center px-space-xl py-3.5 rounded-full bg-gradient-to-r from-[#2F6BFF] via-[#12B5B0] to-[#22C58B] text-white font-headline-sm text-body-md font-semibold tracking-wide hover:brightness-110 transition-all shadow-[0_4px_24px_rgba(18,181,176,0.35)]" data-path="reservar-consulta" href="#">
+              Reservar consulta gratuita
+            </a>
+<a class="inline-flex items-center justify-center px-space-xl py-3.5 rounded-full bg-surface-container-high/60 hover:bg-surface-container-high text-on-surface font-headline-sm text-body-md font-medium transition-all shadow-sm" href="#servicios-seccion">
+              Explorar servicios
+            </a>
+</div>
+<!-- Quick Telemetry Micro-Pill -->
+<div class="flex items-center gap-space-md pt-space-sm text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+<span>Sub-150ms P99 Latency</span>
+</div>
+<span>/</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Zero-Downtime Deploy</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Code Console -->
+<div class="lg:col-span-5 relative">
+<div class="w-full rounded-2xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-2xl p-space-md overflow-hidden relative">
+<!-- Terminal Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low/50 px-3 py-2 rounded-xl">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#FF5F56] inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFBD2E] inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#27C93F] inline-block"></span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>nexora-runtime-cli</span>
+</div>
+<span class="font-label-mono-sm text-[10px] text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">v3.4.1</span>
+</div>
+<!-- Terminal Stream Body -->
+<div class="p-space-sm font-code-snippet text-code-snippet space-y-3 font-mono leading-relaxed select-none">
+<div class="flex items-center gap-2 text-primary">
+<span class="text-tertiary">$</span>
+<span class="text-on-surface font-semibold">nexora deploy --prod</span>
+</div>
+<div class="text-on-surface-variant flex items-center gap-2">
+<span class="text-secondary">✓</span>
+<span>construyendo infraestructura cloud...</span>
+</div>
+<div class="text-on-surface-variant flex items-center gap-2">
+<span class="text-secondary">✓</span>
+<span>seguridad y pruebas verificadas [342/342]</span>
+</div>
+<!-- Edge Cluster Status -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/80 flex items-center justify-between text-tertiary">
+<div class="flex items-center gap-2">
+<span class="flex gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</span>
+<span class="font-medium text-tertiary">desplegado en clúster edge ✓</span>
+</div>
+<span class="font-label-mono-sm text-tertiary font-bold bg-tertiary/10 px-1.5 py-0.5 rounded">[142ms]</span>
+</div>
+<!-- Terminal Telemetry Mini-Matrix -->
+<div class="grid grid-cols-2 gap-2 pt-2 text-[12px] text-on-surface-variant">
+<div class="bg-surface-container/40 p-2 rounded">
+<span class="block text-[10px] uppercase text-outline">Región</span>
+<span class="text-on-surface font-mono">iad1 · gru1 · fra1</span>
+</div>
+<div class="bg-surface-container/40 p-2 rounded">
+<span class="block text-[10px] uppercase text-outline">Contenedores</span>
+<span class="text-on-surface font-mono">16 Pods / Healthy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Accent Badge -->
+<div class="absolute -bottom-4 -left-4 px-space-md py-2 rounded-xl bg-surface-container-high/90 backdrop-blur-md shadow-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface font-medium">99.999% SLAs Garantizados</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SERVICIOS (Crisp Light Contrast Layer) -->
+<section class="w-full bg-[#f4f7fc] text-[#00174d] py-24 px-margin md:px-margin-desktop relative z-10" id="servicios-seccion">
+<div class="max-w-[1280px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-16 max-w-2xl mx-auto">
+<div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-[#00297a]/10 mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-[#00885d]"></span>
+<span class="font-label-mono-sm text-label-mono-sm tracking-wider uppercase text-[#00297a] font-semibold">ESPECIALIDADES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-[#001231]">
+          Creado para el <span class="bg-gradient-to-r from-[#2F6BFF] to-[#22C58B] bg-clip-text text-transparent">rendimiento</span> moderno
+        </h2>
+<p class="font-body-md text-body-md text-[#233455] mt-space-xs">
+          Ingeniería a medida en cuatro disciplinas clave.
+        </p>
+</div>
+<!-- 4-Column Horizontal Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Service Card 1 -->
+<div class="group flex flex-col justify-between p-space-lg rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,18,49,0.06)] hover:shadow-[0_20px_40px_rgba(47,107,255,0.12)] hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#dbe1ff] flex items-center justify-center mb-space-md text-[#00297a] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-[#001231] mb-space-xs">
+              Software a medida
+            </h3>
+<p class="font-body-md text-body-md text-[#233455] line-clamp-2">
+              Aplicaciones web y móviles resilientes creadas con frameworks modernos en la nube.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-[#dbe1ff]/60">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm font-semibold text-[#003cac] hover:text-[#00174d] transition-colors" href="#">
+              Saber más <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group flex flex-col justify-between p-space-lg rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,18,49,0.06)] hover:shadow-[0_20px_40px_rgba(34,197,139,0.12)] hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#6bfcbd]/30 flex items-center justify-center mb-space-md text-[#005236] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-[#001231] mb-space-xs">
+              IA y automatización
+            </h3>
+<p class="font-body-md text-body-md text-[#233455] line-clamp-2">
+              Flujos de agentes inteligentes y pipelines LLM personalizados para tus operaciones.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-[#dbe1ff]/60">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm font-semibold text-[#003cac] hover:text-[#00174d] transition-colors" href="#">
+              Saber más <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group flex flex-col justify-between p-space-lg rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,18,49,0.06)] hover:shadow-[0_20px_40px_rgba(0,176,171,0.12)] hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#72f7f1]/30 flex items-center justify-center mb-space-md text-[#00504d] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">shopping_bag</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-[#001231] mb-space-xs">
+              Comercio electrónico
+            </h3>
+<p class="font-body-md text-body-md text-[#233455] line-clamp-2">
+              Tiendas headless de alta conversión diseñadas para compras instantáneas.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-[#dbe1ff]/60">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm font-semibold text-[#003cac] hover:text-[#00174d] transition-colors" href="#">
+              Saber más <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="group flex flex-col justify-between p-space-lg rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,18,49,0.06)] hover:shadow-[0_20px_40px_rgba(47,107,255,0.12)] hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#dbe1ff] flex items-center justify-center mb-space-md text-[#00297a] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">language</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-[#001231] mb-space-xs">
+              Sitios web
+            </h3>
+<p class="font-body-md text-body-md text-[#233455] line-clamp-2">
+              Sitios de marketing ultrarrápidos con diseño meticuloso y velocidad SEO.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-[#dbe1ff]/60">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm font-semibold text-[#003cac] hover:text-[#00174d] transition-colors" href="#">
+              Saber más <span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DEMOSTRACIÓN INTERACTIVA / TELEMETRÍA (Pale Blue Surface) -->
+<section class="w-full bg-[#EEF6FB] text-[#00174d] py-24 px-margin md:px-margin-desktop relative">
+<div class="max-w-[1280px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-12 max-w-2xl mx-auto">
+<div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-[#00885d]/10 mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-[#00885d] animate-ping"></span>
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-[#005236] font-semibold">TELEMETRÍA EN VIVO</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-[#001231]">
+          Entrega automatizada <span class="bg-gradient-to-r from-[#2F6BFF] to-[#22C58B] bg-clip-text text-transparent">simulada</span>
+</h2>
+<p class="font-body-md text-body-md text-[#233455] mt-space-xs">
+          Observa nuestro flujo de despliegue automatizado en tiempo real.
+        </p>
+</div>
+<!-- Main Wide CI/CD Interactive Board -->
+<div class="max-w-4xl mx-auto rounded-2xl bg-white shadow-[0_16px_45px_rgba(0,18,49,0.08)] overflow-hidden">
+<!-- Board Header -->
+<div class="p-space-lg bg-[#e2ecf5] flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#22C58B] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-[#00885d]"></span>
+</span>
+<span class="font-label-mono-sm text-label-mono-sm uppercase font-bold tracking-wider text-[#003824]">
+              DESPLIEGUE ACTIVO
+            </span>
+</div>
+<div class="font-label-mono-sm text-label-mono-sm text-[#434655] font-mono">
+            Motor CI/CD v4.19
+          </div>
+</div>
+<div class="p-space-xl space-y-space-lg">
+<!-- Commit Metadata Box -->
+<div class="p-space-md rounded-xl bg-[#f4f7fc] flex flex-col md:flex-row md:items-center justify-between gap-space-sm font-mono text-body-sm">
+<div class="flex items-center gap-space-sm text-[#00174d]">
+<span class="material-symbols-outlined text-[18px] text-[#2F6BFF]">commit</span>
+<span class="font-bold">PAYLOAD: COMMIT #a9f4c0</span>
+</div>
+<div class="text-[#233455] font-label-mono-sm text-label-mono-sm">
+              Petición entrante: payload sprint API v2.4 (t-0.00s)
+            </div>
+</div>
+<!-- Step Progression List -->
+<div class="space-y-space-md" id="pipeline-steps">
+<!-- Step 1 -->
+<div class="pipeline-item flex items-center justify-between p-space-md rounded-xl bg-[#f8fafc] transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-[#6bfcbd]/30 text-[#005236] flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-[#001231] font-medium">Pruebas de regresión automatizadas superadas</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-[#00885d] font-semibold bg-[#6bfcbd]/20 px-2.5 py-1 rounded-full">✓ 100% PASS</span>
+</div>
+<!-- Step 2 -->
+<div class="pipeline-item flex items-center justify-between p-space-md rounded-xl bg-[#f8fafc] transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-[#6bfcbd]/30 text-[#005236] flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-[#001231] font-medium">Contenedores Docker enviados al registro</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-[#00885d] font-semibold bg-[#6bfcbd]/20 px-2.5 py-1 rounded-full">✓ PUSHED</span>
+</div>
+<!-- Step 3 -->
+<div class="pipeline-item flex items-center justify-between p-space-md rounded-xl bg-[#f8fafc] transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-[#6bfcbd]/30 text-[#005236] flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-[#001231] font-medium">Cachés de borde CDN global invalidadas</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-[#00885d] font-semibold bg-[#6bfcbd]/20 px-2.5 py-1 rounded-full">✓ PURGED</span>
+</div>
+</div>
+<!-- Bottom Action Control Bar -->
+<div class="flex items-center justify-between pt-space-sm border-t border-[#dbe1ff]">
+<div class="flex items-center gap-2 text-body-sm text-[#434655]">
+<span class="w-2 h-2 rounded-full bg-[#00885d]"></span>
+<span id="pipeline-status">Despliegue finalizado con éxito (total: 1.4s)</span>
+</div>
+<button class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-xl bg-[#dbe1ff] hover:bg-[#b5c4ff] text-[#00174d] font-body-sm text-body-sm font-semibold transition-all" id="btn-replay" onclick="replaySimulation()">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-500" id="replay-icon">refresh</span>
+              Repetir simulación
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: METODOLOGÍA / PROCESO (Deep Navy) -->
+<section class="w-full bg-surface-dim py-24 px-margin md:px-margin-desktop relative overflow-hidden">
+<!-- Dotted Grid Canvas Background -->
+<div class="absolute inset-0 opacity-[0.14] pointer-events-none bg-[radial-gradient(#b5c4ff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-16 max-w-2xl mx-auto">
+<div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-primary font-semibold">METODOLOGÍA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">
+          Nuestra <span class="bg-gradient-to-r from-[#2F6BFF] to-[#22C58B] bg-clip-text text-transparent">entrega</span> en tres pasos
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Velocidad predecible desde la primera conversación hasta la escala global.
+        </p>
+</div>
+<!-- 3-Column Horizontal Connected Process Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop relative">
+<!-- Step 01 -->
+<div class="relative p-space-xl rounded-2xl bg-surface-container/70 backdrop-blur-md shadow-xl flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="w-10 h-10 rounded-xl bg-primary-container text-white flex items-center justify-center font-headline-sm font-bold shadow-md">
+                01
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant font-mono">FASE 1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-xs">
+              Llamada de diagnóstico
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Taller en profundidad para definir requisitos técnicos, arquitectura e hitos.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md">
+<span class="font-label-mono-sm text-[12px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 48h de respuesta
+            </span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="relative p-space-xl rounded-2xl bg-surface-container/70 backdrop-blur-md shadow-xl flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="w-10 h-10 rounded-xl bg-primary-container text-white flex items-center justify-center font-headline-sm font-bold shadow-md">
+                02
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant font-mono">FASE 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-xs">
+              Planificación
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Hoja de ruta técnica detallada, especificaciones de diseño y entregables semanales.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md">
+<span class="font-label-mono-sm text-[12px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">architecture</span> Arquitectura validada
+            </span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="relative p-space-xl rounded-2xl bg-surface-container/70 backdrop-blur-md shadow-xl flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="w-10 h-10 rounded-xl bg-tertiary-container text-tertiary-fixed flex items-center justify-center font-headline-sm font-bold shadow-md">
+                03
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary font-mono">FASE 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-xs">
+              Desarrollo y medición
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Entrega continua CI/CD con vistas previas automatizadas y observabilidad en tiempo real.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md">
+<span class="font-label-mono-sm text-[12px] text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">speed</span> Sprints bisemanales
+            </span>
+</div>
+</div>
+</div>
+<!-- Centered CTA under steps -->
+<div class="flex justify-center mt-16">
+<a class="inline-flex items-center justify-center px-space-xl py-3.5 rounded-full bg-gradient-to-r from-[#2F6BFF] via-[#12B5B0] to-[#22C58B] text-white font-headline-sm text-body-md font-semibold tracking-wide hover:brightness-110 transition-all shadow-[0_4px_24px_rgba(18,181,176,0.35)]" data-path="reservar-consulta" href="#">
+          Reservar consulta gratuita
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: LLAMADO FINAL A LA ACCIÓN (Deep Navy / Glow Accent) -->
+<section class="w-full bg-surface-dim py-28 px-margin md:px-margin-desktop relative overflow-hidden">
+<!-- Focal Radial Ambient Glow -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<div class="w-[600px] h-[350px] bg-gradient-to-r from-primary-container/20 to-secondary-container/20 blur-[130px] rounded-full"></div>
+</div>
+<div class="max-w-[1280px] mx-auto relative z-10 text-center flex flex-col items-center">
+<!-- Status Badge -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container/80 backdrop-blur-md shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#49dfa2] animate-pulse"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface uppercase tracking-wider font-semibold">
+          COMIENZA HOY
+        </span>
+</div>
+<!-- Headline -->
+<h2 class="font-display-hero text-display-hero text-on-surface font-bold tracking-tight max-w-3xl mb-space-sm">
+        Construyámoslo <span class="bg-gradient-to-r from-[#2F6BFF] to-[#22C58B] bg-clip-text text-transparent">juntos</span>
+</h2>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+        ¿Tienes un proyecto ambicioso en mente? Estamos listos para diseñar tu visión.
+      </p>
+<!-- Primary Action CTA -->
+<a class="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-[#2F6BFF] via-[#12B5B0] to-[#22C58B] text-white font-headline-sm text-body-lg font-semibold tracking-wide hover:brightness-110 transition-all shadow-[0_4px_30px_rgba(18,181,176,0.4)]" data-path="reservar-consulta" href="#">
+        Reservar consulta gratuita
+      </a>
+<!-- Guarantees Footer Micro-labels -->
+<div class="flex items-center justify-center gap-space-lg mt-10 text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+          Sin compromisos iniciales
+        </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+          NDA técnico incluido
+        </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+          Kickoff en 72 horas
+        </span>
+</div>
+</div>
+</section>
+<!-- Interactive Telemetry Simulation Script -->
+<script>
+    function replaySimulation() {
+      const icon = document.getElementById('replay-icon');
+      const statusText = document.getElementById('pipeline-status');
+      const steps = document.querySelectorAll('.pipeline-item');
+
+      if (!icon || !steps.length) return;
+
+      icon.classList.add('rotate-180');
+      statusText.textContent = "Reiniciando pruebas CI/CD...";
+
+      steps.forEach((step) => {
+        step.style.opacity = '0.35';
+        step.style.transform = 'scale(0.98)';
+      });
+
+      setTimeout(() => {
+        steps[0].style.opacity = '1';
+        steps[0].style.transform = 'scale(1)';
+        statusText.textContent = "1/3 Pruebas de regresión superadas...";
+      }, 400);
+
+      setTimeout(() => {
+        steps[1].style.opacity = '1';
+        steps[1].style.transform = 'scale(1)';
+        statusText.textContent = "2/3 Contenedores sincronizados en clúster...";
+      }, 900);
+
+      setTimeout(() => {
+        steps[2].style.opacity = '1';
+        steps[2].style.transform = 'scale(1)';
+        statusText.textContent = "Despliegue finalizado con éxito (total: 1.4s)";
+        icon.classList.remove('rotate-180');
+      }, 1400);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container text-on-surface-variant"><div class="max-w-[1280px] mx-auto px-margin md:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-container to-tertiary flex items-center justify-center shadow-[0_0_12px_rgba(47,107,255,0.25)]"><span class="material-symbols-outlined text-on-primary-container text-[20px]">terminal</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Nexora<span class="text-primary">Labs</span></span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Estudio de ingeniería de software avanzada e incubadora tecnológica especializada en infraestructura distribuida y herramientas para desarrolladores.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Código fuente y repositorios" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all" href="#"><span class="material-symbols-outlined text-[18px]">code</span></a><a aria-label="Canal de comunicaciones" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all" href="#"><span class="material-symbols-outlined text-[18px]">forum</span></a><a aria-label="Publicaciones técnicas" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all" href="#"><span class="material-symbols-outlined text-[18px]">rss_feed</span></a><a aria-label="Red profesional" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all" href="#"><span class="material-symbols-outlined text-[18px]">hub</span></a></div></div><div class="flex flex-col gap-space-md"><span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-on-surface font-semibold">Servicios</span><div class="flex flex-col gap-space-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#">Arquitectura de Software</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#">Sistemas Distribuidos</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#">Auditoría &amp; Rendimiento</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#">Herramientas de Desarrollador</a></div></div><div class="flex flex-col gap-space-md"><span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-on-surface font-semibold">Empresa</span><div class="flex flex-col gap-space-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="nosotros" href="#">Nosotros</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="proceso" href="#">Proceso</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="carreras" href="#">Carreras</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#">Contacto</a></div></div><div class="flex flex-col gap-space-md"><span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-on-surface font-semibold">Legal</span><div class="flex flex-col gap-space-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacidad" href="#">Privacidad</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="terminos" href="#">Términos de Servicio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="seguridad" href="#">Seguridad</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cumplimiento" href="#">Cumplimiento</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low/50 px-space-lg py-space-md rounded-xl"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Nexora Labs Inc. Todos los derechos reservados.</span><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-mono-sm text-label-mono-sm uppercase text-tertiary">Sistemas Operativos 99.98%</span></div></div></div></footer></body></html>
