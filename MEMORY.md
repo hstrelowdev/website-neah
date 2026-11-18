@@ -79,4 +79,5 @@ Update this section when relevant decisions, requirements or implementation mile
 - Decisiones de contenido: se eliminaron cifras y garantías no verificables; la consola del hero y el tablero CI/CD están etiquetados como demo/simulación.
 - Validación responsive (1440, 768 y 390 px): sin overflow horizontal, sin errores de consola, modal con foco inicial y cierre con Escape, replay del pipeline correcto.
 - Skills instaladas: `frontend-design` y `webapp-testing` en `.agents/skills/`, registradas en `skills-lock.json`.
-- Pendiente: revisión final del usuario y despliegue; no hay commit ni push de los cambios actuales.
+- Demos en GitHub Pages: un workflow publica un portal en la raíz, websiteV1 en `/v1/` y websiteV2 en `/v2/`. Ambas apps usan `base: './'` para rutas relativas. Requiere `Settings → Pages → Source: GitHub Actions`.
+- Pendiente: confirmar que el usuario cambió el Source de Pages y verificar los envíos reales a Formspree en la demo pública.

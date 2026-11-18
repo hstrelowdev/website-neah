@@ -49,3 +49,13 @@ npm test
 - El formulario envía por `fetch` a Formspree: `https://formspree.io/f/mgakydlg`. Se puede sobrescribir con `VITE_FORMSPREE_ENDPOINT`. El éxito solo se muestra si la respuesta es correcta.
 - No se incluyen estadísticas ni garantías no verificables; la consola del hero y el tablero CI/CD están marcados como demo/simulación.
 - Ver `websiteV2/README.md` para detalles de estructura y contenido simulado.
+
+## Demos en GitHub Pages
+
+Un único workflow (`.github/workflows/deploy-pages.yml`) compila y publica ambas apps:
+
+- `https://hstrelowdev.github.io/website-neah/` — portada con enlaces a las dos versiones.
+- `https://hstrelowdev.github.io/website-neah/v1/` — websiteV1 (CommitLine).
+- `https://hstrelowdev.github.io/website-neah/v2/` — websiteV2 (Nexora Labs).
+
+Requisito: en `Settings → Pages → Source` elegir **GitHub Actions**. Cada push a `main` actualiza las demos. Ambas apps usan `base: './'` en `vite.config.ts` para que los assets carguen dentro de `/v1/` y `/v2/`.

@@ -1,0 +1,68 @@
+name: Deploy demos (v1 + v2) a GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            websiteV1/package-lock.json
+            websiteV2/package-lock.json
+
+      - name: Instalar, probar y compilar websiteV1
+        working-directory: websiteV1
+        run: |
+          npm ci
+          npm test
+          npm run build
+
+      - name: Instalar, probar y compilar websiteV2
+        working-directory: websiteV2
+        run: |
+          npm ci
+          npm test
+          npm run build
+
+      - name: Ensamblar el sitio
+        run: |
+          mkdir -p site/v1 site/v2
+          cp -R websiteV1/dist/. site/v1/
+          cp -R websiteV2/dist/. site/v2/
+          cp portal/index.html site/index.html
+
+      - name: Subir el sitio como artifact de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
