@@ -81,3 +81,8 @@ Update this section when relevant decisions, requirements or implementation mile
 - Skills instaladas: `frontend-design` y `webapp-testing` en `.agents/skills/`, registradas en `skills-lock.json`.
 - Demos en GitHub Pages: un workflow publica un portal en la raíz, websiteV1 en `/v1/` y websiteV2 en `/v2/`. Ambas apps usan `base: './'` para rutas relativas. Requiere `Settings → Pages → Source: GitHub Actions`.
 - Pendiente: confirmar que el usuario cambió el Source de Pages y verificar los envíos reales a Formspree en la demo pública.
+
+## 7. REGLAS DE FLUJO GIT (VIGENTE)
+
+- **El agente NUNCA hace `git push` ni publica cambios en un remoto**, por ningún motivo, incluso si se le pide explícitamente. Solo opera en local; todo push lo realiza el usuario por su cuenta.
+- **El agente NUNCA commitea secretos** (`.env`, API keys, tokens, credenciales). `.env` debe permanecer ignorado por git (ya está en `.gitignore`). Si aparece un secreto en el historial, avisar al usuario para que lo rote y decida cómo purgar el historial.

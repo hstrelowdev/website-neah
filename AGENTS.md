@@ -60,6 +60,8 @@ Mantén las especificaciones actualizadas cuando existan cambios en los requisit
 - Ante cambios importantes, actualizar las especificaciones correspondientes.
 - No modificar funcionalidades ajenas al alcance de la tarea.
 - Validar los cambios antes de considerarlos terminados.
+- **NUNCA ejecutar `git push` ni ningún comando que publique código a un remoto** (incluye `git push --force`, `git push --tags`, `git subtree push` o cualquier variante), bajo ningún concepto y aunque el usuario lo solicite explícitamente. El agente solo trabaja localmente; la publicación es responsabilidad exclusiva del usuario.
+- **NUNCA commitear ni dejar rastrear archivos con secretos** (`.env`, claves, tokens, credenciales). Si se detectan, eliminarlos del árbol de trabajo y del índice, añadirlos a `.gitignore` y avisar al usuario.
 
 ## OBJETIVO
 
